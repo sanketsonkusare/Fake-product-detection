@@ -80,7 +80,7 @@ const CheckManufacturer = () => {
                         :
                         <ul class="bg-white mt-8 border border-gray-200 w-96 text-gray-900">
                             <li class="text-center px-6 py-2 border-b border-gray-200 w-full bg-red-600 text-white">
-                                Manufacturer Nat Available
+                                Manufacturer Not Available
                             </li>
                         </ul>
                     }

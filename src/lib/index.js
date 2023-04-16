@@ -1,6 +1,24 @@
 const url = "https://localhost:3000";
-const contractAddress = "0xf1aFF692Ae643bAa92B1A7ba6D9993d9a91e7436";
+const contractAddress = "0xd72785664eb0456bF405a9f11BE8306d87E5aAa8";
 const contractABI = [
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "_address",
+        type: "address",
+      },
+      {
+        internalType: "bool",
+        name: "_status",
+        type: "bool",
+      },
+    ],
+    name: "approveManufacturer",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
   {
     inputs: [
       {
@@ -25,11 +43,6 @@ const contractABI = [
         internalType: "string",
         name: "_website",
         type: "string",
-      },
-      {
-        internalType: "address",
-        name: "_address",
-        type: "address",
       },
     ],
     name: "createManufacturer",
@@ -138,6 +151,19 @@ const contractABI = [
     name: "updateOwnership",
     outputs: [],
     stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "getAllManufacturers",
+    outputs: [
+      {
+        internalType: "address[]",
+        name: "",
+        type: "address[]",
+      },
+    ],
+    stateMutability: "view",
     type: "function",
   },
   {

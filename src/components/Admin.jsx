@@ -1,5 +1,6 @@
 import React from "react";
 import AddManufacturer from "./AddManufacturer";
+import ViewManufacturers from "./ViewManufacturers";
 
 const Admin = () => {
     return (
@@ -13,7 +14,7 @@ const Admin = () => {
                 <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
                     <div className="px-4 py-6 sm:px-0">
                         <div class="grid grid-cols-1gap-2">
-                            <AddManufacturer />
+                            <ViewManufacturers />
                         </div>
                     </div>
                 </div>
